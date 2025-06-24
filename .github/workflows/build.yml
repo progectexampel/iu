@@ -32,6 +32,4 @@ jobs:
         run: |
           pytest || echo "No tests found, skipping"
 
-      - name: Run deployment tests
-        run: |
-          curl -f http://your-service-url || exit 1
+     
