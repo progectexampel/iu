@@ -10,6 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check OS version
+        run: uname -a
+
+      - name: Check installed updates
+        run: sudo apt list --upgradable || echo "No updates available"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
