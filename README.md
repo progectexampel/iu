@@ -17,6 +17,8 @@ A simple Flask app designed for testing CI/CD platforms based on security criter
 5. Run tests: `pytest`
 Run tests: `pytest`
 5. 
+
+Run tests: `pytest`
 Run tests: `pytest`
 
 ## Usage
