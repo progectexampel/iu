@@ -40,3 +40,4 @@ jobs:
         run: pytest
         env:
           MY_SECRET: ${{ secrets.MY_SECRET }}
+          PYTHONPATH: ${{ github.workspace }}
