@@ -36,11 +36,7 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run app.py with secret
-        run: python app.py
+      - name: Run tests with secret
+        run: pytest
         env:
           MY_SECRET: ${{ secrets.MY_SECRET }}
-
-      - name: Run tests
-        run: |
-          pytest || echo "No tests found, skipping"
