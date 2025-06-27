@@ -12,7 +12,7 @@ permissions:
 jobs:
   # 1. Запуск централизованного CodeQL
   codeql-analysis:
-    uses: progectexampel/security-templates/.github/workflows/codeql-org.yml@main
+    uses: progectexampel/workflow-templates/.github/workflows/reusable-ci.yml@main
     with:
       language: python
 
