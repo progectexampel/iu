@@ -6,8 +6,10 @@ on:
   pull_request:
     branches: [main]
 
+# Должно быть ВОТ ТАК:
 permissions:
-  contents: write
+  security-events: write  # Нужно для CodeQL reusable workflow
+  contents: read          # Нужно для actions/checkout и других базовых задач
 
 jobs:
   # 1. Запуск централизованного CodeQL
