@@ -4,5 +4,5 @@ django==2.2.9
 requests==2.19.0
 pyyaml==5.1
 Jinja2>=3.0
-Flask>=2.2,<3.0
+Flask>=2.2,<4.0
 Werkzeug>=2.2,<3.0
